@@ -1,4 +1,5 @@
-## Hi there 👋
+## I am Juan Migue V. Zamora, a passionate mobile and web front-end developer with a keen eye for design and a deep understanding of modern web technologies.
+
 
 <!--
 **juanmiguelzamora/JuanMiguelZamora** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
