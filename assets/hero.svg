@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-labelledby="title desc">
+  <title id="title">Juan Miguel Zamora — Hero</title>
+  <desc id="desc">A clean modern hero card with name and tagline on a soft gradient and geometric accent.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0b1220" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feBlend in="SourceGraphic" in2="blur" mode="normal" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="200" fill="url(#g)" rx="12" />
+
+  <!-- Soft accent blob -->
+  <g transform="translate(720,30) rotate(20)">
+    <path d="M0,40 C30,-10 120,-10 160,40 C200,90 120,160 60,140 C10,125 -20,90 0,40 Z" fill="url(#accent)" opacity="0.15" />
+    <path d="M20,40 C50,-10 140,-10 180,40 C220,90 140,160 80,140 C30,125 0,90 20,40 Z" fill="url(#accent)" opacity="0.20" filter="url(#soft)" />
+  </g>
+
+  <!-- Left content -->
+  <g transform="translate(40,40)">
+    <text x="0" y="0" fill="#ffffff" font-family="Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="26" font-weight="700">Juan Miguel Zamora</text>
+    <text x="0" y="36" fill="#cbd5e1" font-family="Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="14">Software Engineer • Full‑stack Developer</text>
+
+    <rect x="0" y="60" width="470" height="1" fill="#1f2937" opacity="0.6" />
+
+    <text x="0" y="92" fill="#94a3b8" font-family="Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13">
+      I design and build modern web experiences focusing on clarity, performance, and great developer DX.
+    </text>
+  </g>
+
+  <!-- Right minimalist icon: initials in circle -->
+  <g transform="translate(680,48)">
+    <circle cx="40" cy="40" r="36" fill="#0b1220" stroke="url(#accent)" stroke-width="2" />
+    <text x="40" y="52" text-anchor="middle" fill="white" font-family="Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-weight="700" font-size="20">JM</text>
+  </g>
+
+</svg>
